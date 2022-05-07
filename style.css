@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url(imagenes/fondo3.jpg);
+    background-image: linear-gradient(to right,purple,orange);
     background-size:cover;
     background-attachment: fixed;
 }
@@ -65,6 +65,19 @@ body{
     margin:0 1.5rem;
     text-decoration: none;
 }
+
+
+
+.menu li ul{
+    display:none;
+    position:absolute;
+}
+
+.menu li:hover > ul{
+    display:block;
+    background: #092327;
+}
+
 
 .logo{
     float:right;
@@ -184,3 +197,18 @@ audio{
     text-align: center;
 }
 
+#PeliculasCont{
+    display:none;
+}
+
+#AnimeCont{
+    display: none;
+}
+
+#MangaCont{
+    display: none;
+}
+
+#MusicaCont{
+    display: none;
+}

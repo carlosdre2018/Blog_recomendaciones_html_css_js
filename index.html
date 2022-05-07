@@ -5,23 +5,33 @@
     <link rel="stylesheet" href="tit_sub.css" />
     <title>Blog - Carlos Chavez</title>
 </head>
-<body>
+<body id="body">
+    <script src="script.js"></script>
     <h1>Blog - Lista de peliculas/anime/manga
         <img class="logo" src="imagenes/logo.png" height="80">
     </h1>
         
     <ul class="menu">
-        <li class="peliculas"><a href=#Peliculas>Peliculas</a></li>
-        <li class="anime"><a href="#Anime">Anime</a></li>
-        <li class="manga"><a href="#Manga">Manga</a></li>
-        <li class="musica"><a href="#Musica">Musica</a></li>
+        <li class="peliculas" id="peli"><a href=#Peliculas onclick="MostrarPeli();">Peliculas</a></li>
+        <li class="anime" id="anim"><a href="#Anime" onclick="MostrarAnime();">Anime</a></li>
+        <li class="manga" id="mang"><a href="#Manga" onclick="MostrarManga();">Manga</a></li>
+        <li class="musica"id="musi"><a href="#Musica" onclick="MostrarMusica();">Musica</a></li>
         <li class="Autor"><a href="about.html" target="_blank">Acerca del autor </a></li>
+        <li class="Background"><a href="#">Background</a>
+            <ul>
+                <li><a href="#" onclick="CambiarFondo1();">Color 1</a></li>
+                <li><a href="#" onclick="CambiarFondo2();">Color 2</a></li>
+                <li><a href="#" onclick="CambiarFondo3();">Color 3</a></li>
+                <li><a href="#" onclick="CambiarFondo4();">Original</a></li>
+            </ul>
+        </li>
     </ul>
     <br>
     <p class="Inicio">En el siguiente blog se presentara una lista de recomendaciones para peliculas, animes o mangas.<br>
     </p>
-
-    <h2 id="Peliculas">Peliculas</h2><br>
+<div id="FullTodos">
+    <div id="PeliculasCont">
+        <h2 id="Peliculas">Peliculas</h2><br>
     <h3>Fractura</h3>
     <div class="contenedor">
             <div class="contenedor-perfil">
@@ -86,7 +96,8 @@
         </a>
         </div>
     </div>
-
+    </div>
+    <div id="AnimeCont">
     <h2 id="Anime">Anime</h2><br>
     <h3>Bungou Stray Dogs</h3>
     <div class="contenedor">
@@ -150,6 +161,8 @@
         </a>
         </div>
     </div>
+</div>
+    <div id="MangaCont">
     <h2 id="Manga">Manga</h2><br>
     <h3>Kumo desu ga nani ka</h3>
     <div class="contenedor">
@@ -209,6 +222,8 @@
         </a>
         </div>
     </div>
+</div>
+    <div id="MusicaCont">
     <h2 id="Musica">Musica</h2><br>
     <h3>its my life</h3>
     <div class="contenedor" id="pmus">
@@ -291,6 +306,7 @@
             <img id="final-center" src="imagenes/gato.jpg" height="100">
         </figure>
     </div>
-    
+</div>
+</div>
 </body>
 </html>
