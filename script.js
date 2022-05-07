@@ -11,6 +11,14 @@ function OcultarMusica(){
     document.getElementById("MusicaCont").style.display = 'none';
 }
 
+function OcultarPrevia(){
+    document.getElementById("Previa").style.display ="none";
+}
+
+function MostrarPrevia(){
+    document.getElementById("Previa").style.display ="block";
+}
+
 var array = new Array;
 var bool = true;
 var i=0;
@@ -58,12 +66,19 @@ function MostrarPeli(){
             peli.style.display = 'block';
             array.push('peli');
             document.getElementById("peli").style.background= "#ef8354";
+            OcultarPrevia();
         }
         
     }
     i=0;
     bool=true;
     console.log(array);
+    if(array.length==0){
+        MostrarPrevia();
+    }
+    else{
+        OcultarPrevia();
+    }
 }
 
 function MostrarAnime(){
@@ -117,6 +132,12 @@ function MostrarAnime(){
     i=0;
     bool=true;
     console.log(array);
+    if(array.length==0){
+        MostrarPrevia();
+    }
+    else{
+        OcultarPrevia();
+    }
 }
 
 function MostrarManga(){
@@ -149,6 +170,12 @@ function MostrarManga(){
     i=0;
     bool=true;
     console.log(array);
+    if(array.length==0){
+        MostrarPrevia();
+    }
+    else{
+        OcultarPrevia();
+    }
 }
 
 function MostrarMusica(){
@@ -181,6 +208,12 @@ function MostrarMusica(){
     i=0;
     bool=true;
     console.log(Array);
+    if(array.length==0){
+        MostrarPrevia();
+    }
+    else{
+        OcultarPrevia();
+    }
 }
 
 function CambiarFondo1(){
@@ -188,7 +221,7 @@ function CambiarFondo1(){
 }
 
 function CambiarFondo2(){
-    body.style.backgroundImage = "linear-gradient(to right,purple,green)";
+    body.style.backgroundImage = "linear-gradient(to right,gray,black)";
 }
 
 function CambiarFondo3(){
