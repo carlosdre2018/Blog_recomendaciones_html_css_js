@@ -218,16 +218,20 @@ function MostrarMusica(){
 
 function CambiarFondo1(){
     body.style.backgroundImage = "linear-gradient(to right,blue,black)";
+    document.getElementById("menu").style.backgroundColor="gray";
 }
 
 function CambiarFondo2(){
     body.style.backgroundImage = "linear-gradient(to right,gray,black)";
+    document.getElementById("menu").style.backgroundColor="orange";
 }
 
 function CambiarFondo3(){
     body.style.backgroundImage = "linear-gradient(to right,red,yellow)";
+    document.getElementById("menu").style.backgroundColor="blue";
 }
 
 function CambiarFondo4(){
     body.style.backgroundImage = "linear-gradient(to right,purple,orange)";
+    document.getElementById("menu").style.backgroundColor="#092327";
 }
